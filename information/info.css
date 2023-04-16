@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 204, 204);
+}
+
+
+#img {
+    height: 500px;
+}
+.bg{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 100px;
+}
+
+#img:hover {
+    transform: scale(1.1);
+}
+
+@media(max-width:600px){
+
+    #img{
+        
+        height: 400px;
+    }
+
+}
+

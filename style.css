@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    background: url(/image/298cd4ffd68b87514b6cd7e390ac5279\ 1.png) center/cover no-repeat;
+    background-color: black;
+    display: flex;
+}
+
+.right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 50px;
+}
+
+.sanj {
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+form {
+    display: flex; 
+    background: inherit;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+input, button {
+    background: inherit;
+    width: 60%;
+    height: 40px;
+    margin-top: 50px;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+color: white;
+    border: solid 1px rgb(255, 0, 0);
+    border-radius: 30px;
+}
+
+.form {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 50%;
+}
+
+input::placeholder{
+    color: white;
+    font-size: large;
+}
+
+button {
+   
+   background: #ff2d2d;
+   border-radius: 30px;
+   font-weight: 900;
+   color: white;
+}
+
+h1 { 
+    color:white;
+}
+
+input:hover{
+    border-color: aquamarine;
+}
+
+button:hover{
+    border-color: aquamarine;
+}
+@media(max-width: 600px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    input, button{
+        width: 70%;
+    } 
+    .form, form {
+        width: 100%;
+    }
+    .left {
+        width: 100%;
+    }
+}
